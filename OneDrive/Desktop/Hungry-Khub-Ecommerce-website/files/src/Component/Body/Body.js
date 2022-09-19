@@ -3,6 +3,7 @@ import Menu from "./Menu";
 import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
+import Slidder from "./Slidder";
 import { Routes, Route } from "react-router-dom";
 
 const Body = () => {
@@ -14,6 +15,7 @@ const Body = () => {
                 < Route path='/about' exact element={<About />} />
                 < Route path='/contact' exact element={<Contact />} />
             </Routes>
+            <Slidder />
         </div>
     );
 }
