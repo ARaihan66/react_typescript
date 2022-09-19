@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+
+/* .homeContent {
+ 
+} */
+
+.nav-link:hover {
+  text-decoration: underline;
+}
