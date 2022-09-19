@@ -16,6 +16,7 @@ const Body = () => {
                 < Route path='/contact' exact element={<Contact />} />
             </Routes>
             <Slidder />
+
         </div>
     );
 }

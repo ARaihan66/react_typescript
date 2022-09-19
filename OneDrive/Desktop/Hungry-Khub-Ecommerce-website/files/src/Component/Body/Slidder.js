@@ -1,50 +1,94 @@
 import React from "react";
-import pizza from './Slidder Image/pizza.jpg';
-import burger from './Slidder Image/burger.jpg';
-import chicken from './Slidder Image/chicken.jpg';
 import Carousel from 'react-bootstrap/Carousel';
+import bekary from './Slidder Image/bekary.jpg';
+import burger from './Slidder Image/burger.jpg';
+import cake from './Slidder Image/cake.jpg';
+import chicken from './Slidder Image/chicken.jpg';
+import fastFood from './Slidder Image/fastFood.jpg';
+import iceCream from './Slidder Image/iceCream.jpg';
+import pasta from './Slidder Image/pasta.jpg';
+import pizza from './Slidder Image/pizza.jpg';
+
 
 const Slidder = () => {
     return (
-        <Carousel>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={pizza}
-                    alt="First slide"
-                />
-                <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={burger}
-                    alt="Second slide"
-                />
-
-                <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-                <img
-                    className="d-block w-100"
-                    src={chicken}
-                    alt="Third slide"
-                />
-
-                <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                        Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-                    </p>
-                </Carousel.Caption>
-            </Carousel.Item>
-        </Carousel>
+        <div className="container-fluid">
+            <h1 style={{ textAlign: 'center', textDecoration: 'underLine' }}>DELICIOUS FOODS</h1>
+            <Carousel>
+                <Carousel.Item interval={1000}>
+                    <img
+                        className=" w-100"
+                        src={bekary}
+                        alt="bekary"
+                        style={{ opacity: '0.8' }}
+                    />
+                    <Carousel.Caption>
+                        <h1 style={{ color: 'black' }}>BEKARY</h1>
+                        <h3>15% OFF</h3>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item interval={500} >
+                    <img
+                        className=" w-100"
+                        src={pasta}
+                        alt="Pasta"
+                        style={{ opacity: '0.8' }}
+                    />
+                    <Carousel.Caption>
+                        <h1 style={{ color: 'black' }}>PASTA</h1>
+                        <h3>10% OFF</h3>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item interval={500}>
+                    <img
+                        className=" w-100"
+                        src={burger}
+                        alt="Third slide"
+                        style={{ opacity: '0.8' }}
+                    />
+                    <Carousel.Caption>
+                        <h1 style={{ color: 'black' }}>BURGER</h1>
+                        <h3>17% OFF</h3>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item interval={500} >
+                    <img
+                        className=" w-100"
+                        src={fastFood}
+                        alt="Fast Food"
+                        style={{ opacity: '0.8' }}
+                    />
+                    <Carousel.Caption>
+                        <h1 style={{ color: 'black' }}>FAST FOOD</h1>
+                        <h3>19% OFF</h3>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item interval={500} >
+                    <img
+                        className=" w-100"
+                        src={iceCream}
+                        alt="Ice Cream"
+                        style={{ opacity: '0.8' }}
+                    />
+                    <Carousel.Caption>
+                        <h1 style={{ color: 'black' }}>ICE CREAM</h1>
+                        <h3>14% OFF</h3>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item  >
+                    <img
+                        className=" w-100"
+                        src={pizza}
+                        alt="Pizza"
+                        style={{ opacity: '0.8' }}
+                    />
+                    <Carousel.Caption>
+                        <h1 style={{ color: 'black' }}>PIZZA</h1>
+                        <h3>10% OFF</h3>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
+        </div>
     );
 }
 

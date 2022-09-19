@@ -3,7 +3,7 @@ import background from './Background/Background.jpg';
 
 const Home = () => {
     return (
-        <div className="container-fluid" style={{ backgroundImage: `url(${background})`, height: '570px', maxWidth: '1350px', marginTop: '55px' }}>
+        <div className="container-fluid" style={{ backgroundImage: `url(${background})`, opacity: '0.8', height: '570px', maxWidth: '1350px', marginTop: '55px' }}>
             <div className="row">
                 <div className="col-lg-8" style={{ paddingTop: '80px' }}>
                     <span style={{ color: 'white', fontWeight: 'bolder', fontSize: '60px', letterSpacing: '7px' }}>FEEL</span>
