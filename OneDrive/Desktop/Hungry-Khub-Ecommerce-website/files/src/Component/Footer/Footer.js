@@ -1,14 +1,11 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { } from '@fortawesome/free-solid-svg-icons';
-import {faFacebook,faGoogle,faInstagram,faTwitter, faWhatsapp, faYoutube} from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faGoogle, faInstagram, faTwitter, faWhatsapp, faYoutube } from '@fortawesome/free-brands-svg-icons';
 const Footer = () => {
     return (
         <div>
-
             <div>
-
-
                 <footer
                     className="text-center text-lg-start text-white"
                     style={{ backgroundColor: "#1c2331" }}
@@ -27,22 +24,22 @@ const Footer = () => {
 
                         <div>
                             <a href="" className="text-white me-4">
-                            <FontAwesomeIcon icon={faFacebook} style={{margin:"10px",height:"30px"}}/>
+                                <FontAwesomeIcon icon={faFacebook} style={{ margin: "10px", height: "30px" }} />
                             </a>
                             <a href="" className="text-white me-4">
-                            <FontAwesomeIcon icon={faTwitter} style={{margin:"10px",height:"30px"}}/>
+                                <FontAwesomeIcon icon={faTwitter} style={{ margin: "10px", height: "30px" }} />
                             </a>
                             <a href="" className="text-white me-4">
-                            <FontAwesomeIcon icon={faYoutube} style={{margin:"10px",height:"30px"}}/>
+                                <FontAwesomeIcon icon={faYoutube} style={{ margin: "10px", height: "30px" }} />
                             </a>
                             <a href="" className="text-white me-4">
-                            <FontAwesomeIcon icon={faGoogle} style={{margin:"10px",height:"30px"}}/>
+                                <FontAwesomeIcon icon={faGoogle} style={{ margin: "10px", height: "30px" }} />
                             </a>
                             <a href="" className="text-white me-4">
-                            <FontAwesomeIcon icon={faInstagram} style={{margin:"10px",height:"30px"}}/>
+                                <FontAwesomeIcon icon={faInstagram} style={{ margin: "10px", height: "30px" }} />
                             </a>
                             <a href="" className="text-white me-4">
-                            <FontAwesomeIcon icon={faWhatsapp} style={{margin:"10px",height:"30px"}}/>
+                                <FontAwesomeIcon icon={faWhatsapp} style={{ margin: "10px", height: "30px" }} />
                             </a>
                         </div>
 
@@ -62,7 +59,7 @@ const Footer = () => {
                                         className="mb-4 mt-0 d-inline-block mx-auto"
                                         style={{ width: "60px", backgroundColor: "#7c4dff", height: "2px" }}
                                     />
-                                    <p style={{textAlign:"justify"}}>
+                                    <p style={{ textAlign: "justify" }}>
                                         Are you hungry? Did you have a long and stressful day? Interested in getting a cheesy pizza delivered to your office
                                         or looking to avoid the weekly shop? Then Hungry Khub Bangladesh is the right destination for you! Hungry Khub offers you
                                         a long and detailed list of the best restaurants and shop. Check out Hungry Khub shops for favourite partners like Unimart,

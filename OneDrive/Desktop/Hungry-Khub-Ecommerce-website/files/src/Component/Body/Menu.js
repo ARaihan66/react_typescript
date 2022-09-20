@@ -3,55 +3,56 @@ import { Component } from 'react';
 import DISHES from '../../data/dishes';
 import ManuItem from './ManuItem';
 import DishDetail from './DishDetail';
-import {CardColumns,Modal,ModalBody,ModalFooter} from 'reactstrap';
+import { CardColumns, Modal, ModalBody, ModalFooter } from 'reactstrap';
 
-class Menu extends Component{
+class Menu extends Component {
     state = {
         dishes: DISHES,
-        selectedDish : null,
-        modalDish : false,
+        selectedDish: null,
+        modalDish: false,
     }
 
-    onDishSelected = (dish)=>{
+    onDishSelected = (dish) => {
         console.log(dish)
         this.setState({
-         selectedDish: dish,
-         modalDish: !this.state.modalDish
+            selectedDish: dish,
+            modalDish: !this.state.modalDish
         })
     }
 
-    popUp = ()=>{
-      this.setState({
-          modalDish: !this.state.modalDish
-      })
-        
+    popUp = () => {
+        this.setState({
+            modalDish: !this.state.modalDish
+        })
+
     }
 
-    render(){
+    render() {
         const menu = this.state.dishes.map(item => {
-             return <ManuItem
-             dish={item}
-             key={item.id}
-             onDishSelected={()=>this.onDishSelected(item)}
-             />
-            })
+            return <ManuItem
+                dish={item}
+                key={item.id}
+                onDishSelected={() => this.onDishSelected(item)}
+            />
+        })
 
-            let dishDetail = null;
-            if(this.state.selectedDish != null){
-                dishDetail = <DishDetail dish={this.state.selectedDish}/>
-            }
-        return(
-            <div className="container">
+        let dishDetail = null;
+        if (this.state.selectedDish != null) {
+            dishDetail = <DishDetail dish={this.state.selectedDish} />
+        }
+        return (
+            <div className="container-fluid" style={{ marginTop: '76px', backgroundColor: 'pink' }}>
                 <div className="row">
+                    <h2>FOOD ITEM'S</h2>
                     <CardColumns>
                         {menu}
                     </CardColumns>
                     <Modal isOpen={this.state.modalDish}>
                         <ModalBody>
-                         {dishDetail}
+                            {dishDetail}
                         </ModalBody>
                         <ModalFooter>
-                        <button onClick={this.popUp}>Cancel</button>
+                            <button onClick={this.popUp}>Cancel</button>
                         </ModalFooter>
                     </Modal>
                 </div>

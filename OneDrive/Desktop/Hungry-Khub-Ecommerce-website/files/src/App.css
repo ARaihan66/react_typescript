@@ -1,11 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
 }
 
-/* .homeContent {
- 
-} */
-
 .nav-link:hover {
   text-decoration: underline;
+  color: brown;
+}
+
+.itemCard:hover {
+  box-shadow: 5px 5px 5px gray;
+}
+
+.serviceCard {
+  height: 450px;
+  box-shadow: 0px 1px 5px black;
+  margin-bottom: 40px;
+}
+
+.serviceCard:hover {
+  box-shadow: 5px 5px 10px gray;
 }

@@ -50,7 +50,7 @@ class Navigation extends Component {
                 </Link>
               </NavItem>
               <NavItem style={{ padding: "10px" }}>
-                <Link to="/about" className='nav-link'>
+                <Link to="/services" className='nav-link'>
                   Services
                 </Link>
               </NavItem>

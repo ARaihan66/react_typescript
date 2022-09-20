@@ -9,7 +9,8 @@ const Home = () => {
                     <span style={{ color: 'white', fontWeight: 'bolder', fontSize: '60px', letterSpacing: '7px' }}>FEEL</span>
                     <span style={{ color: 'yellow', fontWeight: 'bolder', fontSize: '60px', paddingLeft: '15px', letterSpacing: '7px' }}>HUNGRY</span>
                     <span style={{ color: 'red', fontWeight: 'bolder', fontSize: '60px', paddingLeft: '15px' }}>?</span><br />
-                    <span style={{ color: 'white', backgroundColor: 'blue', letterSpacing: '5px', fontSize: '30px', borderRadius: '4px' }}>Your Favourite Food delivery Partner</span>
+                    <span style={{ color: 'white', letterSpacing: '5px', fontSize: '30px', borderRadius: '4px' }}>We Are Ready to Serve You!</span><br />
+                    <span style={{ color: 'white', backgroundColor: 'blue', letterSpacing: '5px', fontSize: '30px', borderRadius: '4px' }}>Your Favourite Food Delivery Partner</span>
                 </div>
             </div>
             <div className="col-lg-4">

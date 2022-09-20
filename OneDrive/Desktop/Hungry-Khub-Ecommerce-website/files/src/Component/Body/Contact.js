@@ -32,7 +32,7 @@ class Contact extends Component {
 
     render() {
         return (
-            <div className="container card mt-2">
+            <div className="container card" style={{ marginTop: '85px' }}>
                 <h3>Send Your Feedback</h3>
                 <form onSubmit={this.submitForm}>
                     <div className='row'>
@@ -84,8 +84,6 @@ class Contact extends Component {
                         <div class="mb-3 mt-3 col-4">
                         </div>
                         <div className='mb-3 mt-3 col-8'>
-                            <input type="checkbox" name="check" checked={this.state.check} onChange={this.inputChange} />
-                            <label className='ml-2'>May we contact with you</label>
                             <select class="form-select ml-5" name="option" onChange={this.inputChange}>
                                 <option value="Cell Phone">Cell Phone</option>
                                 <option value="Email">Email</option>
