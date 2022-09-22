@@ -11,7 +11,7 @@ const DishDetail = (props) => {
                     <CardTitle style={{ fontWeight: 'bolder', fontSize: '20px' }}>{props.dish.name}</CardTitle>
                     <CardText>{props.dish.description}</CardText>
                     <p>Price: {props.dish.price} Taka only</p>
-                    <LoadComments dishComment={props.dish.comments} />
+                    <LoadComments dishComment={props.comments} />
                 </CardBody>
             </Card>
 
